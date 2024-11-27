@@ -67,7 +67,7 @@
         .cta-button:hover {
             background: #218838;
         }
-        .info-section {
+        .info-section, .faq-section, .testimonials-section {
             padding: 30px;
             text-align: center;
         }
@@ -89,44 +89,52 @@
             margin-bottom: 15px;
             text-align: center;
         }
-        .trust-section {
+        .trust-section, .company-section {
             background: #f9f9f9;
             padding: 20px 30px;
             text-align: center;
             margin: 30px auto;
             max-width: 800px;
         }
-        .trust-section img {
+        .company-section img {
             border-radius: 10px;
             max-width: 100%;
         }
-        .trust-section h3 {
-            margin-top: 15px;
-            font-size: 1.5rem;
-        }
-        .testimonials {
-            background: #e8f5e9;
-            padding: 30px;
-            text-align: center;
-        }
-        .testimonials h2 {
-            font-size: 2rem;
+        .faq-section h2, .testimonials-section h2 {
             margin-bottom: 20px;
         }
-        .testimonial-item {
+        .faq-item {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .faq-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .faq-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .testimonials-section {
+            background: #f1f1f1;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        .testimonial {
             background: #fff;
             padding: 20px;
-            margin: 15px auto;
-            border-radius: 10px;
+            margin: 15px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
         }
-        .testimonial-item p {
-            font-style: italic;
+        .testimonial img {
+            border-radius: 50%;
+            max-width: 80px;
             margin-bottom: 10px;
         }
-        .testimonial-item .author {
-            font-weight: bold;
+        .testimonial p {
+            font-size: 1.1rem;
             color: #333;
         }
         footer {
@@ -139,6 +147,11 @@
             max-height: 30px;
             margin: 0 10px;
         }
+        .timer {
+            font-size: 2rem;
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -148,6 +161,7 @@
         <h1>🚀 Earn $50 Today – Complete This Simple Task! 💸</h1>
         <p>Your opportunity to earn $1,200/month starts here. Trusted by millions worldwide.</p>
         <a href="https://eradictrkr.com/pauldev" class="cta-button">Get Started Now</a>
+        <div class="timer" id="timer">⏰ Hurry! Limited time offer – 15 minutes left!</div>
     </div>
 </div>
 
@@ -161,31 +175,53 @@
 <div class="instructions">
     <h2>📋 How to Complete the Offer</h2>
     <ol>
-        <li><strong>Click the green button above</strong> to access the offer page.</li>
-        <li>Carefully follow the instructions on the offer page. This might include:</li>
+        <li><strong>Click the green button above</strong> to access the offer page. ✅</li>
+        <li>Carefully follow the instructions on the offer page. This might include: 📑</li>
         <ul>
-            <li>Filling out a quick registration form.</li>
-            <li>Completing a short survey.</li>
-            <li>Downloading and installing a free app or browser.</li>
+            <li>Filling out a quick registration form. 📝</li>
+            <li>Completing a short survey. 📊</li>
+            <li>Downloading and installing a free app or browser. 📲</li>
         </ul>
-        <li>Ensure all steps are completed as instructed—partial submissions may not qualify.</li>
-        <li>Once finished, you’ll automatically be redirected to a secure page where you can claim your $50.</li>
+        <li>Ensure all steps are completed as instructed—partial submissions may not qualify. ⚠️</li>
+        <li>Once finished, you’ll automatically be redirected to a secure page where you can claim your $50. 🎉</li>
     </ol>
 </div>
 
-<div class="testimonials">
-    <h2>🎉 What Our Users Are Saying</h2>
-    <div class="testimonial-item">
-        <p>"I earned my first $50 within 10 minutes! This platform is amazing and so easy to use."</p>
-        <span class="author">- Sarah L., USA</span>
+<div class="company-section">
+    <img src="https://mujerejecutiva.com.mx/wp-content/uploads/2020/10/mujer-negocios-morena-posando_23-2148142784.jpg" alt="Our Company">
+    <h3>About Our Company</h3>
+    <p>We are one of the leading companies in online earning opportunities. Our platform is 100% transparent and trusted worldwide. Thousands of users have already achieved their financial goals with us. Join now and start your journey!</p>
+</div>
+
+<div class="faq-section">
+    <h2>❓ Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h4>1. Is this really free?</h4>
+        <p>Yes! Joining and completing tasks on our platform is completely free. You earn real rewards with no hidden fees.</p>
     </div>
-    <div class="testimonial-item">
-        <p>"I was skeptical at first, but I’ve already made $200 this week. Highly recommended!"</p>
-        <span class="author">- John P., UK</span>
+    <div class="faq-item">
+        <h4>2. How long does it take to receive payment?</h4>
+        <p>Payments are processed instantly after completing the offer. Choose your preferred payment method and enjoy your rewards!</p>
     </div>
-    <div class="testimonial-item">
-        <p>"Simple tasks, fast payments, and trusted by PayPal. I love it!"</p>
-        <span class="author">- Maria G., Mexico</span>
+    <div class="faq-item">
+        <h4>3. Can I trust this platform?</h4>
+        <p>Absolutely! We are partnered with trusted platforms like PayPal and Payeer, ensuring safe and reliable transactions.</p>
+    </div>
+</div>
+
+<div class="testimonials-section">
+    <h2>💬 What Our Users Are Saying</h2>
+    <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
+        <p>"This platform helped me earn $50 in no time. The process was easy and the payment was instant!" – John D.</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2">
+        <p>"I couldn't believe how fast I received my payment. Definitely recommend it!" – Sarah L.</p>
+    </div>
+    <div class="testimonial">
+        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User 3">
+        <p>"I’ve tried other platforms, but this one is the best. Simple tasks and quick payouts!" – Mike R.</p>
     </div>
 </div>
 
@@ -195,8 +231,31 @@
     <img src="https://play-lh.googleusercontent.com/3HYud1cjMaEnaqoaC2lHr-6uMoFJPd0S4gJi0o_9lf7ClbtLS84hb5kcfTHv797--_bS" alt="Payeer">
 </footer>
 
+<script>
+    // Timer countdown (15 minutes)
+    var countdownDate = new Date().getTime() + 15 * 60 * 1000; // 15 minutes from now
+    var timer = document.getElementById("timer");
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countdownDate - now;
+
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        timer.innerHTML = "⏰ Hurry! Limited time offer – " + minutes + "m " + seconds + "s left!";
+
+        if (distance < 0) {
+            clearInterval(x);
+            timer.innerHTML = "Offer Expired!";
+        }
+    }, 1000);
+</script>
+
 </body>
 </html>
+
+
 
 
 
