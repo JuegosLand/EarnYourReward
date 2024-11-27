@@ -71,18 +71,28 @@
             padding: 30px;
             text-align: center;
         }
-        .info-section h2 {
-            margin-bottom: 20px;
-        }
         .info-section img {
             max-width: 150px;
             margin: 10px;
         }
-        .trust-section {
+        .instructions {
             background: #fff;
             padding: 20px 30px;
-            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .instructions h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .trust-section {
+            background: #f9f9f9;
+            padding: 20px 30px;
+            text-align: center;
             margin: 30px auto;
             max-width: 800px;
         }
@@ -94,25 +104,30 @@
             margin-top: 15px;
             font-size: 1.5rem;
         }
-        .step-section {
-            background: #f9f9f9;
-            padding: 20px 30px;
-            margin: 20px auto;
-            max-width: 800px;
+        .testimonials {
+            background: #e8f5e9;
+            padding: 30px;
             text-align: center;
         }
-        .step-section h2 {
+        .testimonials h2 {
             font-size: 2rem;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
-        .step-section p {
-            font-size: 1.2rem;
-            margin: 10px 0;
+        .testimonial-item {
+            background: #fff;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
         }
-        .timer {
-            font-size: 1.5rem;
-            color: #FF6347;
-            margin-top: 15px;
+        .testimonial-item p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial-item .author {
+            font-weight: bold;
+            color: #333;
         }
         footer {
             background: #333;
@@ -133,7 +148,6 @@
         <h1>🚀 Earn $50 Today – Complete This Simple Task! 💸</h1>
         <p>Your opportunity to earn $1,200/month starts here. Trusted by millions worldwide.</p>
         <a href="https://eradictrkr.com/pauldev" class="cta-button">Get Started Now</a>
-        <p class="timer">⏳ Offer expires in <span id="timer"></span>!</p>
     </div>
 </div>
 
@@ -144,18 +158,35 @@
     <img src="https://play-lh.googleusercontent.com/3HYud1cjMaEnaqoaC2lHr-6uMoFJPd0S4gJi0o_9lf7ClbtLS84hb5kcfTHv797--_bS" alt="Payeer">
 </div>
 
-<div class="step-section">
-    <h2>How to Get Your $50</h2>
-    <p>1️⃣ Click the "Get Started Now" button above.</p>
-    <p>2️⃣ Follow the instructions to complete the offer (it only takes 5 minutes!).</p>
-    <p>3️⃣ Receive your payment directly to PayPal or Payeer.</p>
-    <p><strong>Hurry! This opportunity won’t last long.</strong></p>
+<div class="instructions">
+    <h2>📋 How to Complete the Offer</h2>
+    <ol>
+        <li><strong>Click the green button above</strong> to access the offer page.</li>
+        <li>Carefully follow the instructions on the offer page. This might include:</li>
+        <ul>
+            <li>Filling out a quick registration form.</li>
+            <li>Completing a short survey.</li>
+            <li>Downloading and installing a free app or browser.</li>
+        </ul>
+        <li>Ensure all steps are completed as instructed—partial submissions may not qualify.</li>
+        <li>Once finished, you’ll automatically be redirected to a secure page where you can claim your $50.</li>
+    </ol>
 </div>
 
-<div class="trust-section">
-    <img src="https://mujerejecutiva.com.mx/wp-content/uploads/2020/10/mujer-negocios-morena-posando_23-2148142784.jpg" alt="Our Company">
-    <h3>About Our Company</h3>
-    <p>We are a globally recognized leader in online earning opportunities, delivering 100% transparency and real rewards. Join thousands of users who trust us to make their financial goals a reality.</p>
+<div class="testimonials">
+    <h2>🎉 What Our Users Are Saying</h2>
+    <div class="testimonial-item">
+        <p>"I earned my first $50 within 10 minutes! This platform is amazing and so easy to use."</p>
+        <span class="author">- Sarah L., USA</span>
+    </div>
+    <div class="testimonial-item">
+        <p>"I was skeptical at first, but I’ve already made $200 this week. Highly recommended!"</p>
+        <span class="author">- John P., UK</span>
+    </div>
+    <div class="testimonial-item">
+        <p>"Simple tasks, fast payments, and trusted by PayPal. I love it!"</p>
+        <span class="author">- Maria G., Mexico</span>
+    </div>
 </div>
 
 <footer>
@@ -163,22 +194,6 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal">
     <img src="https://play-lh.googleusercontent.com/3HYud1cjMaEnaqoaC2lHr-6uMoFJPd0S4gJi0o_9lf7ClbtLS84hb5kcfTHv797--_bS" alt="Payeer">
 </footer>
-
-<script>
-    // Timer Script
-    let countdown = 900; // 15 minutes in seconds
-    const timerEl = document.getElementById("timer");
-    function updateTimer() {
-        const minutes = Math.floor(countdown / 60);
-        const seconds = countdown % 60;
-        timerEl.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-        countdown--;
-        if (countdown < 0) {
-            timerEl.textContent = "EXPIRED!";
-        }
-    }
-    setInterval(updateTimer, 1000);
-</script>
 
 </body>
 </html>
